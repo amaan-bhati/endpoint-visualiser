@@ -6,7 +6,7 @@ import { LinearGradient } from '@visx/gradient';
 import { pointRadial } from 'd3-shape';
 
 import useForceUpdate from './useForceUpdate';
-import LinkControls from './LinkControls';
+// import LinkControls from './LinkControls';
 import getLinkComponent from './getLinkComponent';
 
 interface TreeNode {
@@ -97,7 +97,7 @@ export default function TreeChart({
 
   return totalWidth < 10 ? null : (
     <div>
-      <LinkControls
+      {/* <LinkControls
         layout={layout}
         orientation={orientation}
         linkType={linkType}
@@ -106,7 +106,7 @@ export default function TreeChart({
         setOrientation={setOrientation}
         setLinkType={setLinkType}
         setStepPercent={setStepPercent}
-      />
+      /> */}
       <svg width={totalWidth} height={totalHeight}>
         <LinearGradient id="links-gradient" from="#fd9b93" to="#fe6e9e" />
         <rect width={totalWidth} height={totalHeight} rx={14} fill="#272b4d" />
